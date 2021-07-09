@@ -7,7 +7,7 @@ from app import app, server
 from apps import dashboard, dashboard2
 
 csv = "mydatastore.csv"
-
+server = app.server
 # Add global app methods here
 def get_database():
 
