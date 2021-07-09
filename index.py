@@ -7,13 +7,14 @@ from app import app, server
 from apps import dashboard, dashboard2
 
 csv = "mydatastore.csv"
-server = app.server
 # Add global app methods here
 def get_database():
 
     db = pd.read_csv(csv)
 
     return db
+
+server = app.server
 
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
